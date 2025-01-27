@@ -1,0 +1,335 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ignacio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EXPERIENCE</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="https://static.wixstatic.com/media/2b5d25_b74bcc3d03e34331a6e940ce6cddf144~mv2.jpg" alt="">            </div>
+            <h1>Ignacio Calles</h1>
+            <h2>Game Producer | Game Designer </h2>
+            <div class="Social Media">
+                <a href="https://twitter.com/ignaciocq1120"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ignacio-calles-quintero-161737212/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://nachete07.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hi, I´m Ignacio Calles.</span> I´m a game and level desinger passionate about storytelling in videogames.
+
+                Specialized in the area of levels and narrative I have published several games on different platforms such as Steam, Google play store or itchio.
+                
+                Another of my passions is the area of production. I have worked as a producer and I have been able to develop my communication and leadership skills.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            20-11-2000
+                        </li>
+                        <li>
+                            <strong>Phone Number</strong>
+                            +34 610 42 65 21
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ignaciocallesicq@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://ignaciocalles.itch.io/                        </li>
+
+
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Videogames</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Sports</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="assets/CV Ignacio Calles Quintero.pdf" download="" class="btn btn2">Download CV <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Hard Skills</h3>
+                    <div class="skill">
+                        <span>Programming languages: C#, C++, Java
+                        </span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Game Engines: Unreal, Unity
+                        </span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>3D art tools:Blender, 3ds Max, Maya, Substance Painter</span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Other software: Jira, Tom´s Planner, Miro</span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+            
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Conflict resolution and
+                            communication</span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Project management
+                        </span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Innovative problem solving
+                        </span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Risk evaluation
+                        </span>
+                        <div class="barra-skill">
+                        </div>
+                    </div>
+                            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Master Game Design</h4>
+                        <span class="casa">U-TAD</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Design and Develovment of videogames</h4>
+                        <span class="casa">University of Rey Juan Carlos </span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4> Game Designer & Producer</h4>
+                        <span class="casa">Paranoia Studios</span>
+                        <span class="fecha"> 2023 - 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Producer & Game Designer</h4>
+                        <span class="casa">Virtual Ravens Games</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://store.steampowered.com/app/3276840/Myrmica/?l=spanish"><img src="img/Myrmica.jpg" alt=""></a>
+                    <center>
+                        <div class="">
+                            <h3>Myrmica</h3>
+                            <p>Investigation Narrative Adventure </p>
+                        </div>
+                    </center>
+                </div>
+                <div class="proyecto">
+                    <a href="https://alakama.itch.io/the-best-years-of-my-life"><img src="img/BYL.gif" alt=""></a>
+                    <center>
+                        <div class="">
+                            <h3>The Best years of your life</h3>
+                            <p>2D Simulator</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="proyecto">
+                    <a href="https://vrsdevs.itch.io/jadoraki"><img src="img/Jadoraki.png" alt=""></a>
+                    <center>
+                        <div class="">
+                            <h3>Jadoraki</h3>
+                            <p>VR Game Adventure</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="proyecto">
+                    <a href="https://vrsdevs.itch.io/saturada"><img src="img/Saturada.png" alt=""></a>
+                    <center>
+                        <div class="">
+                            <h3>Saturada</h3>
+                            <p>Z Jam 2022</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="proyecto">
+                    <a href="https://vrsdevs.itch.io/xo-rivals"><img src="img/XORivals.png" alt=""></a>
+                    <center>
+                    <div class="">
+                        <h3>XO Rivals</h3>
+                        <p>Unattended multiplayer</p>
+                    </div>
+                </center>
+                </div>
+                <div class="proyecto">
+                    <a href="https://blinx24.itch.io/looping-crystal"><img src="img/LoopingCrystal.png" alt=""></a>
+                    <center>
+                        <div class="">
+                            <h3>Looping Cristal</h3>
+                            <p>2D Platform</p>
+                        </div>
+                    </center>
+
+                </div>
+                <div class="proyecto">
+                    <a href="https://blinx24.itch.io/escape-from-prison"><img src="img/EscapeFromPrison.png" alt=""></a>
+                    <center>
+                        <div class="">
+                            <h3>Escape from prison</h3>
+                            <p>Mobile Endless runner</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="proyecto">
+                    <a href="https://vrsdevs.itch.io/origins"><img src="img/Origins.png" alt=""></a>
+                    <center>
+                        <div class="">
+                            <h3>Origins</h3>
+                            <p>2D Local-Multiplayer</p>
+                        </div>
+                    </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+   
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://twitter.com/ignaciocq1120"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ignacio-calles-quintero-161737212/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://nachete07.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
