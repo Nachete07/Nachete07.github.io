@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+</div>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilo.css">
+  <title>Portfolio</title>
+</head>
+<body>
+
+<!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+  <header>
+    <div class="logo">
+      <a href="#">Ignacio</a>
+    </div>
+<nav id="nav">
+  <ul>
+    <li><a href="#inicio">HOME</a></li>
+    <li><a href="#sobremi">ABOUT ME</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#curriculum">EXPERIENCE</a></li>
+    <li class="dropdown">
+      <a href="#portfolio" onclick="toggleDropdown(event)">PORTFOLIO &#9662;</a>
+      <ul class="dropdown-content">
+        <li><a href="proyecto-myrmica.html">Myrmica</a></li>
+        <li><a href="proyecto-byl.html">The Best Years of Your Life</a></li>
+        <li><a href="proyecto-timeKiller.html">Time Killer</a></li>
+        <li><a href="proyecto-xorivals.html">XO Rivals</a></li>
+        <li><a href="proyecto-looping.html">Looping Crystal</a></li>
+        <li><a href="proyecto-escape.html">Escape from Prison</a></li>
+        <li><a href="proyecto-origins.html">Origins</a></li>
+      </ul>
+    </li>
+    <li><a href="#contacto">CONTACT</a></li>
+  </ul>
+</nav>
+
+    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+</div>
+
+<!-- SECCIÓN INICIO + ABOUT ME -->
+
+<section class="inicio-sobremi" id="sobremi">
+  <div class="contenido-seccion">
+    <!-- Columna izquierda: Imagen y redes -->
+    <div class="col izquierda">
+      <img src="https://static.wixstatic.com/media/2b5d25_b74bcc3d03e34331a6e940ce6cddf144~mv2.jpg" alt="">
+      <h1>Ignacio Calles</h1>
+      <h2>Game Designer | Producer</h2>
+      <div class="redes">
+                <a href="https://nachete07.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.linkedin.com/in/ignacio-calles-quintero-161737212/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/ignaciocq1120"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+       <div class="btn-cv">
+    <a href="assets/Curriculum Vitae Ignacio Calles Quintero.pdf" download>Download CV</a>
+ 
+
+  </div>
+    </div>
+
+    <!-- Columna derecha: Texto, datos e intereses -->
+    <div class="col derecha">
+      <h2>About me</h2>
+      <p><span>Hi, I´m Ignacio Calles.</span> I´m a producer and game desinger passionate about storytelling in videogames.
+
+                Specialized in the area of levels and narrative I have published several games on different platforms such as Steam, Google play store or itchio.
+                
+                Another of my passions is the area of production. I have worked as a producer and I have been able to develop my communication and leadership skills.</span>.</p>
+
+      <div class="fila datos-personales">
+        <ul>
+          <li><strong>Birthday:</strong> 20/11/2000</li>
+          <li><strong>Phone number:</strong> +34 610 42 65 21</li>
+          <li><strong>Email:</strong> ignaciocallesicq@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="fila contenedor-intereses">
+        <div class="interes">
+          <i class="fas fa-gamepad"></i>
+          <span>Videogames</span>
+        </div>
+        <div class="interes">
+          <i class="fas fa-book"></i>
+          <span>Books</span>
+        </div>
+        <div class="interes">
+          <i class="fas fa-music"></i>
+          <span>Música</span>
+        </div>
+                <div class="interes">
+          <i class="fas fa-sailboat"></i>
+          <span>Sailing</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+  <div class="contenido-seccion">
+    <h2>Skills</h2>
+    <div class="fila">
+      <div class="col">
+        <h3>Hard Skills</h3>
+        <div class="skill"><span>Programming languages: C#, C++, Java</span><div class="barra-skill"><div class="progreso" data-value="80%"></div></div></div>
+        <div class="skill"><span>Game Engines: Unreal, Unity</span><div class="barra-skill"><div class="progreso" data-value="85%"></div></div></div>
+        <div class="skill"><span>3D art tools: Blender, 3ds Max, Maya, Substance Painter</span><div class="barra-skill"><div class="progreso" data-value="90%"></div></div></div>
+        <div class="skill"><span>Other software: Jira, Tom´s Planner, Miro</span><div class="barra-skill"><div class="progreso" data-value="75%"></div></div></div>
+      </div>
+      <div class="col">
+        <h3>Soft Skills</h3>
+        <div class="skill"><span>Conflict resolution and communication</span><div class="barra-skill"><div class="progreso" data-value="80%"></div></div></div>
+        <div class="skill"><span>Project management</span><div class="barra-skill"><div class="progreso" data-value="70%"></div></div></div>
+        <div class="skill"><span>Innovative problem solving</span><div class="barra-skill"><div class="progreso" data-value="90%"></div></div></div>
+        <div class="skill"><span>Risk evaluation</span><div class="barra-skill"><div class="progreso" data-value="65%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Master Game Design</h4>
+                        <span class="casa">U-TAD</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Design and Develovment of videogames</h4>
+                        <span class="casa">University of Rey Juan Carlos </span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4> Game Designer & Producer</h4>
+                        <span class="casa">Paranoia Studios</span>
+                        <span class="fecha"> 2023 - 2024</span>
+                        <p><ul>
+  <li>Creating production plans with Gantt</li>
+  <li>Designing a system of interlocking missions</li>
+  <li>Develop the worldbuilding and character sheets for the story</li>
+  <li>Coordination of the team's escalation plans and help with communication between the different departments</li>
+  <li>Organisation of milestones and stages of a project using sprints</li>
+</ul></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Producer & Game Designer</h4>
+                        <span class="casa">Virtual Ravens Games</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p><ul>
+  <li>2D platform-level design with tiles in Unity</li>
+  <li>Design an interactive narrative with different endings</li>
+  <li>Multiplayer-level design in a top-down view</li>
+  <li>Level design of an endless runner for mobile</li>
+  <li>Schedule the whole work and progress tracking</li>
+  <li>Schedule the whole work pipelines in a short amount of time</li>
+  <li>Ability to organise and manage tasks under pressure during a short development period</li>
+</ul></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+  <div class="contenido-seccion">
+    <h2>PORTFOLIO</h2>
+    <div class="galeria">
+
+      <!-- Proyecto 1 -->
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+                    <div class = "texto-proyecto">
+                    <h3>Myrmica</h3>
+
+          </div>
+          <img src="img/Myrmica.jpg" alt="Myrmica">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> Investigation Narrative Adventure</p>
+          <p><strong>Job Title:</strong> Producer & Game Designer</p>
+          <p><strong>Contributions:</strong> Producer throughout the development and publication stage. Part of the narrative team and designer of a large part of the mission system. Partnered with QA to triage bugs during beta, reducing blocker issues before
+ submission</p>
+          <p><strong>Studio:</strong> Paranoia Studios</p>
+          <p><strong>Platform:</strong> PC (Steam)</p>
+          <div class="botones-proyecto">
+  <a href="proyecto-myrmica.html" class="btn-mas-info">More information</a>
+  <a href="https://store.steampowered.com/app/3276840/Myrmica/" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>
+
+
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+          <div class = "texto-proyecto">
+                    <h3>The Best Years of Your Life</h3>
+
+          </div>
+
+          <img src="img/BYL.gif" alt="The Best Years of Your Life">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> 2D Simulator</p>
+          <p><strong>Job Title:</strong> Game Designer</p>
+          <p><strong>Contributions:</strong> Narrative design of the character and investigation of mental problems for dialogue design. Help the team reach the main topic and coordinate the tasks</p>
+          <p><strong>Studio:</strong> Independent</p>
+          <p><strong>Platform:</strong> PC/Mobile (Itch.io)</p>
+<div class="botones-proyecto">
+  <a href="proyecto-byl.html" class="btn-mas-info">More information</a>
+  <a href="https://alakama.itch.io/the-best-years-of-my-life" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+                    <div class = "texto-proyecto">
+                    <h3>Time Killer</h3>
+
+          </div>
+          <img src="img/PortadaGifHD.gif">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> 3D Platformer</p>
+          <p><strong>Job Title:</strong> Game Designer & Producer</p>
+          <p><strong>Contributions:</strong> Sketching levels layouts and creating prototypes with probuilder tool (greyboxing).  Integrate gameplay elements like characters, objects, enemies and events.  Iterate the design and refining the levels until reach a high-quality standard. Schedule the whole work pipelines </p>
+          <p><strong>Studio:</strong> Independent</p>
+          <p><strong>Platform:</strong> PC (Itch.io)</p>
+<div class="botones-proyecto">
+  <a href="proyecto-timeKiller.html" class="btn-mas-info">More information</a>
+  <a href="https://alakama.itch.io/time-killer" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>        </div>
+      </div>
+
+
+
+      <!-- Proyecto 5 -->
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+                    <div class = "texto-proyecto">
+          <h3>XO Rivals</h3>
+
+          </div>
+          <img src="img/XORivals.png" alt="XO Rivals">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> Unattended Multiplayer Strategy</p>
+          <p><strong>Job Title:</strong> Game Designer</p>
+          <p><strong>Contributions:</strong> Multiplayer system design, design the implemented 2D mini-games and balancing.  Project tracking using dailys with the team</p>
+          <p><strong>Studio:</strong> Virtual Ravens Games</p>
+          <p><strong>Platform:</strong> PC (Itch.io)</p>
+<div class="botones-proyecto">
+  <a href="proyecto-xorivals.html" class="btn-mas-info">More information</a>
+  <a href="https://vrsdevs.itch.io/xo-rivals" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>        </div>
+      </div>
+
+      <!-- Proyecto 6 -->
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+                    <div class = "texto-proyecto">
+          <h3>Looping Crystal</h3>
+
+          </div>
+          <img src="img/LoopingCrystal.png" alt="Looping Crystal">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> 2D Platformer</p>
+          <p><strong>Job Title:</strong> Producer & Game Designer</p>
+          <p><strong>Contributions:</strong> Designing mechanics for 2D platform levels and their iterations and 2D platform-level design with tiles in Unity. organise and manage tasks under pressure during a
+ short development period</p>
+          <p><strong>Studio:</strong> Virtual Ravens Games</p>
+          <p><strong>Platform:</strong> PC (Itch.io)</p>
+<div class="botones-proyecto">
+  <a href="proyecto-looping.html" class="btn-mas-info">More information</a>
+  <a href="https://blinx24.itch.io/looping-crystal" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>        </div>
+      </div>
+
+      <!-- Proyecto 7 -->
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+                    <div class = "texto-proyecto">
+          <h3>Escape from Prison</h3>
+
+          </div>
+          <img src="img/scape.jpg" alt="Escape from Prison">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> Endless Runner</p>
+          <p><strong>Job Title:</strong> Producer & Game Designer</p>
+          <p><strong>Contributions:</strong> Design of interactive mechanics for an endless runner. Schedule the whole work and progress tracking</p>
+          <p><strong>Studio:</strong> Independent</p>
+          <p><strong>Platform:</strong> Mobile (Android)</p>
+<div class="botones-proyecto">
+  <a href="proyecto-escape.html" class="btn-mas-info">More information</a>
+  <a href="https://blinx24.itch.io/escape-from-prison" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>        </div>
+      </div>
+
+      
+      <!-- Proyecto 4 
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+                    <div class = "texto-proyecto">
+          <h3>Saturada</h3>
+
+          </div>
+          <img src="img/Saturada.png" alt="Saturada">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> Visual Novel</p>
+          <p><strong>Job Title:</strong> Producer & Narrative Designer</p>
+          <p><strong>Contributions:</strong> Time management, communication, planning</p>
+          <p><strong>Studio:</strong> Virtual Ravens Games</p>
+          <p><strong>Platform:</strong> PC (Itch.io)</p>
+<div class="botones-proyecto">
+  <a href="proyecto-saturada.html" class="btn-mas-info">More information</a>
+  <a href="https://vrsdevs.itch.io/saturada" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>        </div>
+      </div>
+      -->
+      <!-- Proyecto 8 -->
+      <div class="proyecto">
+        <div class="imagen-proyecto">
+                    <div class = "texto-proyecto">
+                    <h3>Origins</h3>
+
+          </div>
+          <img src="img/Origins.png" alt="Origins">
+        </div>
+        <div class="texto-proyecto">
+          <p><strong>Genre:</strong> 2D Local-Multiplayer</p>
+          <p><strong>Job Title:</strong> Game Designer</p>
+          <p><strong>Contributions:</strong> Multiplayer level design in a top-down view, balancing and  Organise and assign team tasks</p>
+          <p><strong>Studio:</strong> Virtual Ravens Games</p>
+          <p><strong>Platform:</strong> PC (Itch.io)</p>
+<div class="botones-proyecto">
+  <a href="proyecto-Origins.html" class="btn-mas-info">More information</a>
+  <a href="https://vrsdevs.itch.io/origins" target="_blank" class="btn-jugar">
+    <span class="icono"></span> Play Game
+  </a>
+</div>        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+</section>
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+  <div class="contenido-seccion">
+    <footer>
+      <!-- Botón redondo volver arriba -->
+      <a href="#inicio" class="btn-arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+
+      <!-- Redes sociales -->
+      <div class="redes">
+        <a href="https://twitter.com/ignaciocq1120" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ignacio-calles-quintero-161737212/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://nachete07.itch.io/" target="_blank">
+          <i class="fa-brands fa-itch-io"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+</section>
+
+
+
+<script 
+src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1332 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CONTENEDOR GENERAL PARA CENTRAR SECCIONES */
+/* ========================
+   HEADER
+   ======================== */
+.contenedor-header {
+    background-color: #252A2E;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 10px 0; /* más compacto */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* menos padding vertical */
+}
+
+.contenedor-header .logo a {
+    font-family: 'Righteous', cursive;
+    font-size: 28px; /* más pequeño */
+    color: #1CB698;
+    text-decoration: none;
+}
+
+/* Menú principal */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1CB698;
+}
+
+/* Dropdown */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown ul.dropdown-content {
+    display: none; /* oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #252A2E;
+    min-width: 220px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+nav ul li.dropdown ul.dropdown-content li {
+    border-bottom: 1px solid #1CB698;
+}
+
+nav ul li.dropdown ul.dropdown-content li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav ul li.dropdown ul.dropdown-content li a:hover {
+    background-color: #1CB698;
+}
+
+/* Hover desktop */
+@media screen and (min-width: 981px) {
+    nav ul li.dropdown:hover ul.dropdown-content {
+        display: block;
+    }
+}
+
+/* Responsive menu */
+.nav-responsive {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Mostrar nav responsive */
+@media screen and (max-width: 980px) {
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive {
+        display: block;
+        position: absolute;
+        top: 60px; /* justo debajo del header */
+        right: 0;
+        background-color: #252A2E;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+    nav.responsive ul {
+        display: block;
+        flex-direction: column;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid #1CB698;
+        padding: 10px 20px;
+    }
+    nav.responsive ul li.dropdown ul.dropdown-content {
+        position: static;
+        display: none; /* oculto por defecto */
+    }
+    nav.responsive ul li.dropdown.open ul.dropdown-content {
+        display: block;
+    }
+}
+
+/* Espacio para que la primera sección no quede tapada */
+body {
+    padding-top: 60px; /* ajusta según altura real del header */
+}
+
+
+/* SECCION INICIO */
+.inicio {
+  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(img/Banner\ Myrmica\ FINAL.png);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inicio .contenido-banner {
+  padding: 20px;
+  background-color: #1e2326;
+  text-align: center;
+  border-radius: 40px;
+  max-width: 350px;
+}
+.inicio .contenido-banner img {
+  margin-top: 40px;
+  border: 10px solid #1CB698;
+  width: 80%;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inicio .contenido-banner h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  font-family: 'Righteous', cursive;
+}
+.inicio .contenido-banner h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.inicio .contenido-banner .redes a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover {
+  background-color: #1CB698;
+}
+
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col {
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/* SKILLS */
+/* ==============================
+   SECCION SKILLS
+   ============================== */
+/* ==============================
+   SECCION SKILLS
+   ============================== */
+.skills {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 40px;
+    color: #1CB698;
+}
+.skills .col h3 {
+  font-family: 'Righteous', cursive;
+  font-size: 28px;
+  color: #1CB698;
+  margin-bottom: 25px; /* aumenta este valor para más separación */
+}
+/* Contenedor principal con dos columnas */
+.skills .fila {
+    display: flex;
+    justify-content: center; /* centra las columnas */
+    gap: 50px; /* espacio entre columnas */
+    flex-wrap: wrap; /* permite responsive */
+}
+
+/* Columnas izquierda y derecha */
+.skills .col {
+    flex: 1 1 300px; /* ancho mínimo de 300px y máximo flexible */
+    max-width: 450px; /* ancho máximo */
+}
+
+/* Nombre de la skill */
+.skills .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; /* nombre alineado a la izquierda dentro de la columna */
+}
+
+/* Barra de fondo */
+.skills .barra-skill {
+    height: 12px;
+    width: 100%;
+    background-color: #0ab47b;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* Barra de progreso */
+.skills .progreso {
+    height: 100%;
+    background-color: #1CB698;
+    width: 0; /* se animará con JS */
+    border-radius: 6px;
+    transition: width 2s ease-in-out;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .skills .fila {
+        flex-direction: column; /* apila columnas en móvil */
+        align-items: center;
+        gap: 30px;
+    }
+    .skills .col {
+        max-width: 90%;
+    }
+}
+
+
+
+/* CURRICULUM */
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* ==============================
+   PORTFOLIO FINAL
+   ============================== */
+.portfolio {
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 20px;
+}
+.portfolio .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.portfolio h2 {
+  font-size: 48px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  padding: 20px 0;
+  color: #1CB698;
+}
+/* Galería en grid */
+.portfolio .galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+/* Proyecto */
+.portfolio .proyecto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Imagen arriba */
+.portfolio .proyecto .imagen-proyecto img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+/* Texto debajo */
+.portfolio .proyecto .texto-proyecto {
+  padding: 40px;
+  
+
+  text-align: left;
+}
+
+.portfolio .proyecto .texto-proyecto h3 {
+  font-family: 'Righteous', cursive;
+  font-size: 28px;
+  color: #1CB698;
+  margin-bottom: 10px;
+  margin-bottom: 12px; /* ajusta a tu gusto, por ejemplo 12-15px */
+    text-align: center;
+
+}
+.portfolio .proyecto .texto-proyecto p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.texto-proyecto p {
+  margin-bottom: 15px; /* mayor espacio entre párrafos */
+}
+/* Botón */
+
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .portfolio .galeria {
+    grid-template-columns: 1fr;
+  }
+  .portfolio .proyecto .imagen-proyecto img {
+    height: 200px;
+  }
+}
+
+/* CONTACTO */
+.contacto {
+  background-color: #1e2326;
+  color: #fff;
+}
+.contacto h2 { font-family: 'Righteous', cursive; text-align: center; margin-bottom: 40px; }
+footer { background-color: #252A2E; color: #fff; padding: 50px 0 30px 0; text-align: center; position: relative; }
+footer .redes a { color: #fff; margin: 0 5px; border-radius: 100%; width: 42px; height: 42px; line-height: 42px; display: inline-block; border: 1px solid #fff; transition: 0.3s;}
+footer .redes a:hover { background-color: #1CB698; }
+
+/* RESPONSIVE MENU */
+@media screen and (max-width:980px){
+  nav{ display: none; } 
+  .nav-responsive{ display: block; }
+  nav.responsive{ display: block; position: absolute; right: 0; top: 75px; background-color: #252A2E; width: 180px; }
+  nav.responsive ul li { border-bottom: 1px solid #fff; padding: 10px 0; }
+}
+@media screen and (max-width:700px){
+  .sobremi .fila, .skills .fila, .curriculum .fila { flex-direction: column; }
+  .sobremi .col, .skills .col, .curriculum .col { flex: 1 1 100%; }
+}
+/* =========================
+   SECCIÓN SOBRE MÍ - inicio-sobremi
+   ========================= */
+.inicio-sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1e2326;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.inicio-sobremi .contenido-seccion {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    gap: 60px; /* Espacio entre columnas */
+}
+
+/* Columna izquierda: imagen y redes */
+.inicio-sobremi .col.izquierda {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.inicio-sobremi .col.izquierda img {
+    width: 90%;
+    max-width: 250px;
+    border-radius: 100%;
+    border: 10px solid #1CB698;
+    margin-bottom: 20px;
+}
+
+.inicio-sobremi .col.izquierda h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.inicio-sobremi .col.izquierda h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.inicio-sobremi .col.izquierda .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    margin: 0 8px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.inicio-sobremi .col.izquierda .redes a:hover {
+    background-color: #1CB698;
+}
+
+/* Columna derecha: texto, datos e intereses */
+.inicio-sobremi .col.derecha {
+    flex: 1;
+}
+
+.inicio-sobremi .col.derecha h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #1CB698;
+    text-align: left;
+}
+
+.inicio-sobremi .col.derecha p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.inicio-sobremi .col.derecha p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+
+/* Datos personales */
+.inicio-sobremi .col.derecha .datos-personales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inicio-sobremi .col.derecha .datos-personales ul li {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Intereses */
+.inicio-sobremi .col.derecha .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.inicio-sobremi .col.derecha .contenedor-intereses .interes {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #252A2E;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.inicio-sobremi .col.derecha .contenedor-intereses .interes i {
+    font-size: 38px;
+    margin-bottom: 12px;
+    color: #1CB698;
+}
+
+.inicio-sobremi .col.derecha .contenedor-intereses .interes span {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hover intereses */
+.inicio-sobremi .col.derecha .contenedor-intereses .interes:hover {
+    background-color: #1CB698;
+}
+
+/* Botón CV */
+.inicio-sobremi .col.derecha .btn-cv {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #252A2E;
+    border: 2px solid #1CB698;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.inicio-sobremi .col.derecha .btn-cv:hover {
+    background-color: #1CB698;
+    color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .inicio-sobremi .contenido-seccion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inicio-sobremi .col.derecha, .inicio-sobremi .col.izquierda {
+        width: 100%;
+        text-align: center;
+    }
+    .inicio-sobremi .col.derecha h2 {
+        text-align: center;
+    }
+    .inicio-sobremi .col.derecha .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ==============================
+   PÁGINA DE PROYECTO
+   ============================== */
+.proyecto-detalle, .contribucion {
+  background-color: #252A2E;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.proyecto-detalle .contenido-seccion, .contribucion .contenido-seccion {
+  max-width: 1200px;
+  margin: auto;
+}
+.proyecto-detalle .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+        padding-bottom:20px; /* espacio desde el menú fijo */
+
+}
+
+
+
+/* Fila imagen + info */
+.fila-proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 130%; 
+  align-items: stretch; /* Fuerza que todas las columnas tengan la misma altura */
+  margin-bottom: 40px;
+}
+.col-imagen {
+  flex: 1;
+  max-width: 50%;
+}
+
+.col-texto {
+  flex: 1;
+  max-width: 50%;
+}
+
+
+
+
+/* Imagen ocupando todo el alto disponible */
+.col-imagen img {
+  width: 100%;
+  height: 100%;           /* Ocupa la altura completa de su columna */
+  object-fit: cover;      /* Ajusta la imagen sin deformarla */
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.col-imagen img:hover {
+  transform: scale(1.03);
+}
+
+/* Texto */
+.col-texto {
+  justify-content: center; /* Centra el texto verticalmente */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* Sección contribución */
+.fila-contribucion {
+  margin-top: -60px;
+}
+
+.fila-contribucion .col-texto {
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .fila-proyecto {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* Ya no hace falta stretch */
+  }
+
+  .col-imagen,
+  .col-texto {
+    flex: 1 0 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .col-imagen img {
+    height: auto; 
+  }
+}
+
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .fila-proyecto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .col-imagen, .col-texto {
+    flex: 1 1 100%;
+  }
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #252A2E; /* mismo color que tus secciones */
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+/* Títulos del proyecto y contribución */
+.titulo-proyecto, .titulo-contribucion {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 42px;
+  margin-bottom: 60px; /* Aumentado desde 40px a 60px */
+  color: #1CB698;
+}
+
+/* Texto de la info del proyecto */
+.fila-proyecto .col-texto p {
+  margin-bottom: 18px; /* Espacio entre cada línea de info */
+}
+
+/* Texto de la contribución */
+.fila-contribucion .col-texto p {
+  margin-bottom: 20px; /* Espacio entre párrafos de contribución */
+}
+/* Botón volver fijo */
+/* Botón volver fijo a la izquierda */
+
+.inicio-sobremi .col.izquierda .btn-cv {
+    display: block;
+    margin: 20px auto 0 auto; /* espacio arriba y centrado */
+    padding: 12px 25px;
+    background-color: #252A2E;
+    border: 2px solid #1CB698;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.inicio-sobremi .col.izquierda .btn-cv:hover {
+    background-color: #1CB698;
+    color: #fff;
+}
+/* Contenedor contacto */
+.contacto {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 60px 20px 40px 20px;
+  text-align: center;
+}
+
+/* Footer */
+.contacto footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Botón redondo "volver arriba" */
+footer .btn-arriba {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #1CB698;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 24px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+footer .btn-arriba:hover {
+  background-color: #14a584;
+  transform: translateY(-3px);
+}
+
+/* Redes sociales */
+footer .redes a {
+  color: #fff;
+  margin: 0 10px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+footer .redes a:hover {
+  background-color: #1CB698;
+  color: #fff;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+/* Contenedor de la imagen del proyecto */
+.proyecto-tbyol .imagen-proyecto {
+  width: 100%;
+  height: 300px; /* Tamaño del marco */
+  background-color: #1e2326; /* Fondo del marco */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Imagen dentro del contenedor */
+.proyecto-tbyol .imagen-proyecto img {
+  width: auto;   /* Mantiene proporción */
+  height: 90%;   /* Ajusta tamaño dentro del marco */
+  object-fit: contain; /* No se recorta */
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+
+
+/* Contenedor de los botones */
+.botones-proyecto {
+  display: flex;             /* Para poner los botones en fila */
+  justify-content: center;   /* Centrar horizontalmente */
+  align-items: center;       /* Alinear verticalmente */
+  gap: 15px;                 /* Espacio entre los botones */
+  margin: 50px 0;            /* Espacio arriba y abajo del contenedor */
+}
+
+/* Estilos generales de los botones */
+.botones-proyecto a {
+  display: flex;              /* Para que icono y texto estén alineados */
+  align-items: center;        /* Centrar verticalmente el contenido */
+  padding: 12px 25px;         /* Espaciado interno */
+  border-radius: 8px;         /* Bordes redondeados */
+  text-decoration: none;      /* Quitar subrayado */
+  color: white;               /* Color del texto */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: all 0.2s ease; /* Suavizar efectos */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+/* Botón Más Información */
+.btn-mas-info {
+  background-color: #1CB698; /* Azul */
+}
+
+/* Botón Jugar Proyecto */
+.btn-jugar {
+  background-color: #1CB698; /* Verde */
+}
+
+/* Icono dentro del botón */
+.icono {
+  margin-right: 8px; /* Separación entre icono y texto */
+  font-size: 18px;
+}
+
+/* Efecto hover para ambos botones */
+.botones-proyecto a:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-out;
+}
+
+.contenido-seccion, .proyecto {
+  opacity: 1;
+  transform: translateY(30px);
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #111;
+  --primary-color: #4caf50;
+}
+
+body.dark {
+  --bg-color: #111;
+  --text-color: #eee;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modo-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1000;
+}
+.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-out;
+}
+
+.contenido-seccion > * {
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+
+
+
+
+/* Contenedor general de la página */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenido principal */
+main, .contenido-seccion {
+  flex: 1 0 auto; /* Ocupa todo el espacio disponible */
+  padding-bottom: 80px; /* Deja espacio para el botón */
+}
+
+/* Botón volver siempre abajo a la izquierda */
+/* Botón volver siempre abajo a la izquierda */
+.btn-volver {
+  position: fixed;
+  bottom: 20px;       /* Siempre abajo */
+  left: 160px;         /* Pegado a la izquierda */
+  z-index: 1000;
+  padding: 40px 20px;
+  border-radius: 30px;
+}
+
+
+
+/* Contenedor principal */
+.seccion-doble {
+  display: flex;              /* activa layout en fila */
+  flex-direction: row;        /* asegura que estén uno al lado del otro */
+  align-items: flex-start;    /* alinea arriba */
+  justify-content: space-between;
+  max-width: 2000px;          /* más ancho */
+  margin: 0 auto;
+  padding: 100px 0px;
+  gap: 50px;                  /* espacio entre texto e imagen */
+}
+
+/* Texto */
+.seccion-doble .texto {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  flex: 0 0 60%;              /* texto ocupa 70% del ancho */
+}
+
+/* Imágenes */
+.seccion-doble .imagenes-derecha {
+  flex: 0 0 40%;              /* imágenes ocupan 30% */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.seccion-doble .imagenes-derecha img {
+  width: 100%;                /* que llenen la columna */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive (para móviles) */
+@media (max-width: 768px) {
+  .seccion-doble {
+    flex-direction: column;   /* en móviles se apilan */
+  }
+
+  .seccion-doble .texto,
+  .seccion-doble .imagenes-derecha {
+    flex: 0 0 100%;           /* ocupan todo el ancho */
+  }
+}
+
+
+/* Responsivo: móviles */
+@media (max-width: 768px) {
+  .seccion-doble {
+    grid-template-columns: 1fr; /* Apila texto e imágenes */
+  }
+  .seccion-doble .imagenes-derecha {
+    flex-direction: row; /* Imágenes en fila */
+    gap: 10px;
+  }
+  .seccion-doble .imagenes-derecha img {
+    height: auto; /* Ajusta altura automáticamente */
+  }
+}
+
+/* Botón volver fijo a la izquierda */
+.btn-volver {
+    position: fixed;       /* Fijo en la pantalla */
+    bottom: -40px;          /* Separado del borde inferior */
+    left: 440px;            /* Separado del borde izquierdo */
+    z-index: 1000;         /* Por encima de otros elementos */
+}
+
+.btn-volver a {
+    display: inline-block;
+    background-color: #1CB698;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* sombra ligera */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-volver a:hover {
+    background-color: #149678;
+    transform: translateY(-2px);
+}
+
+/* Ajuste de contenido para que no quede debajo del botón */
+.proyecto-detalle, .contribucion {
+    padding-bottom: 10px; /* Deja espacio suficiente para el botón */
+}
+
+/* Responsivo: móvil */
+@media (max-width: 768px) {
+  .seccion-doble {
+    flex-direction: column; /* Apila columnas */
+    gap: 20px;
+  }
+
+  .seccion-doble p, .imagenes-derecha {
+    flex: 0 0 100%;        /* Ocupan todo el ancho */
+  }
+
+  .imagenes-derecha img {
+    height: auto;          /* Altura automática */
+  }
+}
+.texto p {
+  margin-bottom: 20px; /* ajusta el espacio a tu gusto */
+  text-align: justify;  /* opcional: justificar el texto */
+  line-height: 1.8;    /* hace que el texto sea más legible */
+}
+
+/* Contenedor principal de la sección de solo texto */
+.seccion-texto {
+  display: flex;               /* Usamos flex para centrar vertical y horizontal */
+  flex-direction: column;      /* Mantiene los párrafos en columna */
+  justify-content: center;     /* Centra verticalmente */
+  align-items: center;         /* Centra horizontalmente */
+  min-height: 20vh;           /* Ocupa toda la altura de la pantalla */
+  padding: 50px 20px;
+  background-color: #252A2E;
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;         /* Justifica el texto */
+}
+
+
+/* Texto */
+.seccion-texto .texto {
+  width: 125%;       /* ocupa todo el ancho */
+  line-height: 1.8;
+  font-size: 16px;
+  
+}
+
+/* Espacio entre párrafos */
+.seccion-texto .texto p {
+  margin-bottom: 20px; /* separa los párrafos */
+}
+
+/* Responsivo: móviles */
+@media (max-width: 768px) {
+  .seccion-texto {
+    padding: 30px 10px;
+  }
+}
+.fila-imagenes-igual {
+  display: flex;
+  gap: 20px; /* espacio entre imágenes */
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.fila-imagenes-igual .imagen {
+  flex: 1;                /* todas ocupan el mismo ancho */
+  /* quitamos la altura fija para que no se deformen */
+  border-radius: 10px;
+  display: flex;          /* centramos dentro */
+  align-items: center;
+  justify-content: center;
+}
+
+.fila-imagenes-igual .imagen img {
+  max-width: 100%;
+  height: auto;            /* mantiene proporción original */
+  display: block;
+  transition: transform 0.3s ease;
+  max-height: 700px; /* antes eran ~300px */
+}
+
+.fila-imagenes-igual .imagen img:hover {
+  transform: scale(1.05); /* zoom sutil */
+}
+
+
+.fila-imagenes-igual .imagen img:hover {
+  transform: scale(1.05); /* efecto hover opcional */
+}
+
+/* Responsive: apilar imágenes en móvil */
+@media (max-width: 768px) {
+  .fila-imagenes-igual {
+    flex-direction: column;
+  }
+
+  .fila-imagenes-igual .imagen {
+    height: 250px; /* ajusta la altura para móviles */
+  }
+}
+
+.subtitulo-contribucion {
+    font-family: 'Righteous', cursive;
+
+  font-size:2rem;   /* tamaño más pequeño que el título */
+  font-weight: 400;    /* un poco más ligero */
+  color: #1CB698;         /* gris suave */
+  margin: 0px 0 0px; /* espacio arriba/abajo */
+  text-align: left;    /* 👈 alineado a la izquierda */
+}
+
+.sangria {
+  text-indent: 40px;
+}
