@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto - Origins</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+<!-- MENU -->
+<div class="contenedor-header">
+  <header>
+    <div class="logo">
+      <a href="index.html">Ignacio</a>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html#inicio">HOME</a></li>
+        <li><a href="index.html#sobremi">ABOUT ME</a></li>
+        <li><a href="index.html#skills">SKILLS</a></li>
+        <li><a href="index.html#curriculum">EXPERIENCE</a></li>
+        <li class="dropdown">
+          <a href="index.html#portfolio" onclick="toggleDropdown(event)">PORTFOLIO &#9662;</a>
+          <ul class="dropdown-content">
+            <li><a href="proyecto-myrmica.html">Myrmica</a></li>
+            <li><a href="proyecto-byl.html">The Best Years of Your Life</a></li>
+            <li><a href="proyecto-timeKiller.html">Time Killer</a></li>
+            <li><a href="proyecto-xorivals.html">XO Rivals</a></li>
+            <li><a href="proyecto-looping.html">Looping Crystal</a></li>
+            <li><a href="proyecto-escape.html">Escape from Prison</a></li>
+            <li><a href="proyecto-origins.html">Origins</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contacto">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+</div>
+
+<!-- Título del proyecto -->
+<section class="proyecto-detalle">
+  <div class="contenido-seccion">
+    <h1 class="titulo-proyecto">Origins</h1>
+    
+    <!-- Sección imagen + info -->
+    <div class="fila-proyecto">
+      <div class="col-imagen">
+        <img src="img/Origins.png" alt="Imagen del proyecto">
+      </div>
+      <div class="col-texto">
+        <p><strong>Sinopsis:</strong>     Origins is a local multiplayer game where you have to help your space cats recover dark matter. Be careful, because each cat will want to keep it for as long as possible.</p>
+        <p><strong>Released:</strong> 2021</p>
+        <p><strong>Studio:</strong> Virtual Ravens Games</p>
+        <p><strong>Plataform:</strong> PC</p>
+        <p><strong>Skill Focus:</strong> Production & Game Design</p>
+        <p><strong>Time Spent:</strong> 5 months</p>
+        <p><strong>Engine and Tools:</strong> Phaser, Trello, Jira</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Contribución -->
+<section class="contribucion">
+  <div class="contenido-seccion">
+    <h2 class="titulo-contribucion">Contributions</h2>
+        <h3 class="subtitulo-contribucion">Producer</h3> <!-- 👈 Subtítulo -->
+
+    <div class="fila-contribucion">
+
+<section class="seccion-doble">
+
+  <!-- Columna de texto -->
+  <div class="texto">
+    <p>
+
+    </p>
+
+    <p>
+My work as production manager focused more on the technical aspects of the game. As it was developed in Phaser, there were quite a few conflicts that caused delays, and we had to manage and coordinate our work as best we could.
+    <p>
+Despite this, we were able to polish the game and fix the various bugs that cropped up.    </p>
+
+  </div>
+
+  <!-- Columna de imágenes -->
+  <div class="imagenes-derecha">
+    <img src="img/image334343.png" alt="Imagen 1">
+  </div>
+</section>
+        <h3 class="subtitulo-contribucion">Game Designer</h3> <!-- 👈 Subtítulo -->
+
+<section class="seccion-texto">
+  <div class="texto">
+    <p>
+My work within the design department was based on designing the different levels in the game.
+To do this, tile-based levels were designed to make it easier to control collisions and other aspects.
+    </p>
+
+    <p>
+I also contributed to the design of mechanics to make the game more dynamic and entertaining.
+    </p>
+
+    <p>
+
+    </p>
+
+  </div>
+</section>
+
+<section class="fila-imagenes-igual">
+  <div class="imagen">
+    <img src="img/image34.png" alt="Imagen 1">
+  </div>
+  <div class="imagen">
+    <img src="img/image2.png" alt="Imagen 2">
+  </div>
+  <div class="imagen">
+    <img src="img/image222.png" alt="Imagen 3">
+  </div>
+</section>
+
+<br>
+
+<br>
+<br>
+
+
+
+
+<script>
+  function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.currentTarget.parentElement;
+    dropdown.classList.toggle('open');
+  }
+
+  function mostrarOcultarMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('responsive');
+  }
+</script>
+<!-- Botón Volver -->
+
+<div class="btn-volver">
+  <a href="index.html">← Back to main page</a>
+  
+</div>
+<br><br>
+
+</body>
+</html>

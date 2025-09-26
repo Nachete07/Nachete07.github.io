@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto - Escape From Prison</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+<!-- MENU -->
+<div class="contenedor-header">
+  <header>
+    <div class="logo">
+      <a href="index.html">Ignacio</a>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html#inicio">HOME</a></li>
+        <li><a href="index.html#sobremi">ABOUT ME</a></li>
+        <li><a href="index.html#skills">SKILLS</a></li>
+        <li><a href="index.html#curriculum">EXPERIENCE</a></li>
+        <li class="dropdown">
+          <a href="index.html#portfolio" onclick="toggleDropdown(event)">PORTFOLIO &#9662;</a>
+          <ul class="dropdown-content">
+            <li><a href="proyecto-myrmica.html">Myrmica</a></li>
+            <li><a href="proyecto-byl.html">The Best Years of Your Life</a></li>
+            <li><a href="proyecto-timeKiller.html">Time Killer</a></li>
+            <li><a href="proyecto-xorivals.html">XO Rivals</a></li>
+            <li><a href="proyecto-looping.html">Looping Crystal</a></li>
+            <li><a href="proyecto-escape.html">Escape from Prison</a></li>
+            <li><a href="proyecto-origins.html">Origins</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contacto">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+</div>
+
+<!-- Título del proyecto -->
+<section class="proyecto-detalle">
+  <div class="contenido-seccion">
+    <h1 class="titulo-proyecto">Escape from Prison</h1>
+    
+    <!-- Sección imagen + info -->
+    <div class="fila-proyecto">
+      <div class="col-imagen">
+        <img src="img/scape.jpg" alt="Imagen del proyecto">
+      </div>
+      <div class="col-texto">
+        <p><strong>Sinopsis:</strong>       Escape from Prison is an endless runner game in which you must help an unfortunate prisoner escape from jail. To do so, you will have to dodge various obstacles and perform certain actions to avoid being caught. Good luck, and I hope it doesn't take you forever...</p>
+        <p><strong>Released:</strong> 2022</p>
+        <p><strong>Studio:</strong> Independent</p>
+        <p><strong>Plataform:</strong> PC/Mobile</p>
+        <p><strong>Skill Focus:</strong> Production & Game Design</p>
+        <p><strong>Time Spent:</strong> 1 month</p>
+        <p><strong>Engine and Tools:</strong> Unity, HacknPlan, Trello, Miro</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Contribución -->
+<section class="contribucion">
+  <div class="contenido-seccion">
+    <h2 class="titulo-contribucion">Contributions</h2>
+        <h3 class="subtitulo-contribucion">Producer</h3> <!-- 👈 Subtítulo -->
+
+    <div class="fila-contribucion">
+
+<section class="seccion-doble">
+
+  <!-- Columna de texto -->
+  <div class="texto">
+    <p>
+
+    </p>
+
+    <p>
+At first, I was in charge of production. Since it wasn't a very large team, coordinating tasks wasn't too complicated. The most difficult part was time management, as we had very tight deadlines and in the end we all had to work even harder.    </p>
+
+    <p>
+      Despite this, we met the deadlines and managed to produce a polished, finished product.
+    </p>
+
+  </div>
+
+  <!-- Columna de imágenes -->
+  <div class="imagenes-derecha">
+    <img src="img/scape 2.jpg" alt="Imagen 1">
+  </div>
+</section>
+        <h3 class="subtitulo-contribucion">Game Designer</h3> <!-- 👈 Subtítulo -->
+
+<section class="seccion-texto">
+  <div class="texto">
+    <p>
+My work within the design department was based on designing and implementing the different mechanics.     </p>
+
+    <p>
+For this game, we decided to implement the two basic mechanics of this genre, which would be jumping and crouching.     </p>
+
+    <p>
+As additional mechanics, we thought of two specific ones that would be directly related to the use of a mobile device. 
+    </p>
+
+        <p>
+To begin with, we thought of designing a mobile device movement mechanic. If the player touches a stain on the ground, the screen will become stained and they will have to shake the mobile device to be able to see and continue playing.    </p>
+
+        <p>
+The other mechanic would combine the player's skill and speed. An audible warning would signal the appearance of a helicopter on the screen, and to avoid being caught, the player would have to draw the symbol shown on the screen before time ran out.    </p>
+
+  </div>
+</section>
+
+<section class="fila-imagenes-igual">
+  <div class="imagen">
+    <img src="img/scape 4.jpg" alt="Imagen 1">
+  </div>
+  <div class="imagen">
+    <img src="img/scape 66.jpg" alt="Imagen 2">
+  </div>
+  <div class="imagen">
+    <img src="img/scape 67.jpg" alt="Imagen 3">
+  </div>
+</section>
+
+<br>
+
+<br>
+<br>
+
+
+
+
+<script>
+  function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.currentTarget.parentElement;
+    dropdown.classList.toggle('open');
+  }
+
+  function mostrarOcultarMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('responsive');
+  }
+</script>
+<!-- Botón Volver -->
+
+<div class="btn-volver">
+  <a href="index.html">← Back to main page
+</a>
+  
+</div>
+<br><br>
+
+</body>
+</html>
