@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto - XO Rivals</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+<!-- MENU -->
+<div class="contenedor-header">
+  <header>
+    <div class="logo">
+      <a href="index.html">Ignacio</a>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html#inicio">HOME</a></li>
+        <li><a href="index.html#sobremi">ABOUT ME</a></li>
+        <li><a href="index.html#skills">SKILLS</a></li>
+        <li><a href="index.html#curriculum">EXPERIENCE</a></li>
+        <li class="dropdown">
+          <a href="index.html#portfolio" onclick="toggleDropdown(event)">PORTFOLIO &#9662;</a>
+          <ul class="dropdown-content">
+            <li><a href="proyecto-myrmica.html">Myrmica</a></li>
+            <li><a href="proyecto-byl.html">The Best Years of Your Life</a></li>
+            <li><a href="proyecto-timeKiller.html">Time Killer</a></li>
+            <li><a href="proyecto-xorivals.html">XO Rivals</a></li>
+            <li><a href="proyecto-looping.html">Looping Crystal</a></li>
+            <li><a href="proyecto-escape.html">Escape from Prison</a></li>
+            <li><a href="proyecto-origins.html">Origins</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contacto">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+</div>
+
+<!-- Título del proyecto -->
+<section class="proyecto-detalle">
+  <div class="contenido-seccion">
+    <h1 class="titulo-proyecto">XO Rivals</h1>
+    
+    <!-- Sección imagen + info -->
+    <div class="fila-proyecto">
+      <div class="col-imagen">
+        <img src="img/XORivals.png" alt="Imagen del proyecto">
+      </div>
+      <div class="col-texto">
+        <p><strong>Sinopsis:</strong>       XO Rivals is an unattended multiplayer, your goal will be to win the tic-tac-toe to beat the other city. However, attaining victory will not be so simple. You will have to win all the minigames to be able to place your pieces. You will also have to choose your opponent's minigame to impede them from putting their piece.  All I can do is wish you luck...</p>
+        <p><strong>Released:</strong> 2022</p>
+        <p><strong>Studio:</strong> Virtual Ravens Games</p>
+        <p><strong>Plataform:</strong> PC/Mobile</p>
+        <p><strong>Skill Focus:</strong> Production & Game Design</p>
+        <p><strong>Time Spent:</strong> 6 months</p>
+        <p><strong>Engine and Tools:</strong> Unity, HacknPlan, Trello, Jira</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Contribución -->
+<section class="contribucion">
+  <div class="contenido-seccion">
+    <h2 class="titulo-contribucion">Contributions</h2>
+        <h3 class="subtitulo-contribucion">Producer</h3> <!-- 👈 Subtítulo -->
+
+    <div class="fila-contribucion">
+
+<section class="seccion-doble">
+
+  <!-- Columna de texto -->
+  <div class="texto">
+
+    <p>
+At first, I was in charge of production. Since it wasn't a very large team, coordinating tasks wasn't too complicated. The most difficult part was time management, as we had very tight deadlines and in the end we all had to work even harder.    </p>
+
+    <p>
+      Despite this, we met the deadlines and managed to produce a polished, finished product.
+    </p>
+
+  </div>
+
+  <!-- Columna de imágenes -->
+  <div class="imagenes-derecha">
+    <img src="img/image343434.png" alt="Imagen 1">
+  </div>
+</section>
+        <h3 class="subtitulo-contribucion">Game Designer</h3> <!-- 👈 Subtítulo -->
+
+<section class="seccion-texto">
+  <div class="texto">
+    <p>
+My work within the narrative department covered different aspects. On the one hand, I helped write 
+the dialogues between the protagonist and his parents. These dialogues have different response options, 
+although they don't really affect the development of the game, as we wanted to tell a simple story with depth. 
+There are moments when 
+certain options are blocked because the protagonist is unable to tell his parents what he thinks.
+    </p>
+
+    <p>
+Our idea was to create dialogues with his parents that showed the protagonist's frustration 
+at not knowing how to talk to them about certain issues related to his mental health and, in turn, 
+to show that his own parents are unable to understand the problems their son is hiding.
+    </p>
+
+    <p>
+Another of my tasks was to write comments or phrases that the protagonist says after performing 
+an action. Each action has three different types of phrases depending on his state. The lower his 
+statistics are, the more impact his reactions will have, and we can see how, over the course of the game, our student
+ will change from enthusiasm to indifference and may even reach a state of depression.
+    </p>
+
+  </div>
+</section>
+
+<section class="fila-imagenes-igual">
+  <div class="imagen">
+    <img src="img/image1111.png" alt="Imagen 1">
+  </div>
+  <div class="imagen">
+    <img src="img/image9999.png" alt="Imagen 2">
+  </div>
+  <div class="imagen">
+    <img src="img/image22222.png" alt="Imagen 3">
+  </div>
+</section>
+
+<br>
+
+<br>
+<br>
+
+
+
+
+<script>
+  function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.currentTarget.parentElement;
+    dropdown.classList.toggle('open');
+  }
+
+  function mostrarOcultarMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('responsive');
+  }
+</script>
+<!-- Botón Volver -->
+
+<div class="btn-volver">
+  <a href="index.html">← Back to main page</a>
+  
+</div>
+<br><br>
+
+</body>
+</html>
