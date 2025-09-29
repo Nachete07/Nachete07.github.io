@@ -1255,7 +1255,7 @@ main, .contenido-seccion {
 
 /* Texto */
 .seccion-texto .texto {
-  width: 125%;       /* ocupa todo el ancho */
+  width: 100%;       /* ocupa todo el ancho */
   line-height: 1.8;
   font-size: 16px;
   
@@ -1330,3 +1330,4 @@ main, .contenido-seccion {
 .sangria {
   text-indent: 40px;
 }
+
