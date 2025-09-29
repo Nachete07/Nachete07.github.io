@@ -1331,3 +1331,52 @@ main, .contenido-seccion {
   text-indent: 40px;
 }
 
+/* Layout por defecto: dos columnas */
+.curriculum .fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Columnas */
+.curriculum .col {
+  flex: 1;
+  padding: 20px;
+}
+
+/* --- Responsive para móviles --- */
+@media (max-width: 768px) {
+  .curriculum .fila {
+    flex-direction: column; /* apila las columnas */
+  }
+
+  .curriculum .col {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .curriculum h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .curriculum h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .curriculum .item {
+    margin-bottom: 25px;
+  }
+
+  /* Centrar conectores en móvil */
+  .conectori, .conectord {
+    display: none; /* puedes ocultarlos en móvil */
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+}
+
